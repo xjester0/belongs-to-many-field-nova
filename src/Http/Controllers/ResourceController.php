@@ -9,7 +9,7 @@ class ResourceController
 {
     public function index(NovaRequest $request, $parent, $relationship, $optionsLabel, $dependsOnValue = null, $dependsOnKey = null)
     {
-        dd($request->all());
+        //dd($request->all());
 
         $resourceClass = $request->newResource();
         $field = $resourceClass
